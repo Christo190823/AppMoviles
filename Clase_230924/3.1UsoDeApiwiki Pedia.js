@@ -1,11 +1,10 @@
 const terminoBusqueda = 'Programación'; // Término que deseas buscar 
-const url = 
-https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=$ 
-{terminoBusqueda} &format=json&origin=*`; 
+const url ='https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=$ {terminoBusqueda} &format=json&origin=*'; 
 // Función para obtener resultados de Wikipedia 
 async function buscarEnWikipedia () { 
 try { 
-const respuesta = await fetch (url); // Llamada a la API de 
+const respuesta = await fetch (url); 
+// Llamada a la API de 
 Wikipedia 
 JSON 
 const datos = await respuesta.json(); // Convierte la respuesta a 
